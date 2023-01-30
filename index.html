@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Dashboard</title>
 </head>
@@ -19,9 +23,7 @@
                     <div class="line3"></div>
                 </div>
             </div>
-            <div class="gradient">
-                
-            </div>
+            <div class="gradient"></div>
             <nav class="navBar">
                 <a href="#"><i class="fa fa-home"></i>&#160;DASHBOARD</a>
                 <a href="#"><i class="fa fa-bell"></i>&#160;ALERTS</a>
@@ -30,23 +32,103 @@
                 <a href="#"><i class="fa fa-gear"></i>&#160;SETTINGS</a>
             </nav>
         </div>
-        <div class="topNav">
-            <button class="create_btn"><span class="symbol">+</span>&#160;Create</button>
-            <div><span class="downArrow">&#8964;</span>&#160;&#160;John Doe</div>
-            <img src="images/user-logo.png" alt="User's Picture">
-        </div>
-        <h1>Welcome, </h1><div class="name">John</div>
-        <div class="widget1">
-            <div class="left">
-                <div class="fire">🔥</div><h3>Available Now!<span>Free Ads Training</span></h3>
-                <h2>How 1 Ad Turned This Falling StartUp Into An 8-Figure Business In 10 Months</h2>
-                <span>(That Only Took 6 Minutes To Create)</span>
-                <p>This beginner-friendly training reveals a secret strategy that's generating jaw dropping results for countless entepreneurs</p>
-                <button class="watch">WATCH NOW <i class="fa fa-play-circle-o"></i></button>
+        <div class="main_content">
+            <div class="topNav">
+                <div class="leftNav">
+                    <button class="create_btn"><span class="symbol">+</span>&#160;Create</button>
+                </div>
+                <div class="rightNav">
+                    <div><span class="downArrow">&#8964;</span>&#160;&#160;John Doe</div>
+                    <img src="images/user-logo.png" alt="User's Picture" class="user_img">
+                </div>
             </div>
-            <div class="right">
-                <img src="images/space.png" alt="Astronaut">
+            <div class="title">
+                <div>Welcome,</div><div class="name">&#160;John</div>
             </div>
+            <div class="widget1">
+                <div class="left1">
+                    <div class="ads">
+                        <span class="fire">🔥</span><span class="header">Available Now! <span>Free Ads Training</span></span>
+                    </div>
+                    <h2>How 1 Ad Turned This Falling StartUp Into An 8-Figure Business In 10 Months</h2>
+                    <span class="head_discript">(That Only Took 6 Minutes To Create)</span>
+                    <p class="discription">This beginner-friendly training reveals a secret strategy that's generating jaw dropping results for countless entepreneurs</p>
+                    <button class="watch">WATCH NOW <i class="fa fa-play-circle-o"></i></button>
+                </div>
+                <div class="right1">
+                    <img src="images/space.png" alt="Astronaut">
+                </div>
+            </div>
+            <div class="middleheader">
+                <div class="left">
+                    <span id="span1">Campaigns</span>
+                    <div class="span2">2</div>
+                </div>
+                <div class="right">
+                    <span id="span3">&#9751;</span>
+                    <span id="span4">&#128931;</span>
+                </div>
+            </div>
+            <div class="widgt2">
+                <div class="second_section">
+                <div class="thing1">
+                    <ul><li>Campaign</li></ul>
+                    <div class="left">
+                        <span id="greaterthan">&#65125;</span>
+                        <span id="threedots">&#8285;</span>
+                    </div>
+                </div>
+
+                <div class="thing2">
+                    <div class="wrapper1">
+                        <div class="wrapper2">
+                            <div class="wrapper3">
+                                <div class="q0">
+                                    <img class="magnet" src="images/magnet.jpg" alt="magnets">
+                                </div>
+                                <div class="q1">
+
+                                    <div class="q2">
+                                        <div class="q1inside">
+                                            <p>Facebook Page Campaign Likes</p>
+                                            <p>Nick Parker Smash Studio FB Page Likes Campaign</p>
+                                            <h3>Running since March 31st, 2021</h3>
+                                        </div>
+                                        <div class="statsection">
+                                            <span>&#129053; 3.42%</span>
+                                            <img class="statimg1" src="images/graph.jpg" alt="graph">
+                                        </div>
+                                    </div>
+
+                                    <div class="stats">
+                                        <div class="lowcolumn">
+                                            <div class="price"><span>$</span>175</div>
+                                            <div class="bullet">&#128364; Daily Budget</div>
+                                        </div>
+                                        <div class="stick"></div>
+                                        <div class="lowcolumn">
+                                            <div class="price"><span>$</span>892</div>
+                                            <div class="bullet">&#9733; Total Spent</div>
+                                        </div>
+                                        <div class="stick"></div>
+                                        <div class="lowcolumn">
+                                            <div class="price"><span>$</span>2,035</div>
+                                            <div class="bullet">&#x267B; Conversions</div>
+                                        </div>   
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+       
         </div>
     </div>
 </body>
