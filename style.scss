@@ -4,10 +4,24 @@ body {
     background-color: #707399;
 }
 
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .myflex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .container {
@@ -52,21 +66,21 @@ body {
     width: .6em;
     height: 3px;
     margin: 4px 0;
-    background-color: #636785;
+    background-color: $grey;
 }
 
 .ham_bar .line2{
     width: .95em;
     height: 3px;
     margin: 4px 0;
-    background-color: #636785;
+    background-color: $grey;
 }
 
 .ham_bar .line3{
     width: 1.3em;
     height: 3px;
     margin: 4px 0;
-    background-color: #636785;
+    background-color: $grey;
 }
 
 .gradient {
@@ -142,7 +156,7 @@ body {
             position: relative;
             bottom: 5px;
             font-size: 20px;
-            color: #656882;
+            color: $grey;
         }
 
         div {
@@ -154,16 +168,19 @@ body {
 
 .title {
     display: flex;
-    font-size: 35px;
-    color: #656882;
     padding: 25px;
 
     .name {
-        color: #FFFFFF
+        color: $white
     }
 }
 
-.widget1 {
+.title-text {
+    font-size: 35px;
+    color: $grey;
+}
+
+.widget {
     background-color: rgba(40, 45, 79, .75);
     padding: 25px;
     border-radius: 15px;
@@ -186,16 +203,16 @@ body {
             }
     
             .header span{
-                color: #656882
+                color: $grey
             }
         }
     
         .head_discript {
-            color: #656882;
+            color: $grey;
         }
     
         .discription {
-            color: #656882;
+            color: $grey;
             margin: 35px 0;
         }
     
@@ -254,11 +271,11 @@ body {
     align-items: center;
 }
 #span1 {
-    font-weight: bolder;
+    font-size: 1.5rem;
 }
 #span3, #span4, #greaterthan, #threedots {
     font-size: 45px;
-    color: #595B75;
+    color: $light-grey;
 }
 .span2 {
     background-color: #3E93C4;
@@ -274,7 +291,7 @@ body {
 }
 
 .right #span4 {
-    background-color: #242942;
+    background-color: $grey;
     font-size: 25px;
     font-weight: bold;
     display: flex;
@@ -306,6 +323,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
 }
 
 /*TEST SECTION*/
@@ -317,6 +335,8 @@ body {
 div.q1 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .wrapper2 {
@@ -329,13 +349,13 @@ div.stick {
     padding: 0;
     width: 1px;
     height: 40px;
-    background-color: #595B75;
+    background-color: $grey;
 }
 
 /*END TEST SECTION*/
 
 #greaterthan {
-    background-color: #242942;
+    background-color: $grey;
     font-size: 25px;
     font-weight: 300;
     display: flex;
@@ -359,10 +379,8 @@ div.stick {
     justify-content: center;   
 }
 
-img.magnet {
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
+.magnet {
+    width:100%;
     
 }
 img.statimg1 {
@@ -386,21 +404,18 @@ img.statimg1 {
 }
 
 .q0 {
-    width: 380px;
-    height: 300px;
-    display: flex;
-    align-items: flex-start;
+    width: 25%;
 }
 
 .q1inside * {
     margin: 0;
     padding: 5px;
     font-size: 20px;
-    color: #595B75;
+    color: $grey;
 }
 .q1inside p:nth-child(2) {
     font-size: 25px;
-    color: #fff;
+    color: $white;
 }
 
 .stats {
@@ -425,5 +440,5 @@ img.statimg1 {
 .bullet {
     font-size: 15px;
     font-weight: 500;
-    color:#595B75;
+    color: $grey;
 }
