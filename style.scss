@@ -2,10 +2,7 @@
 
 body {
     background-color: #707399;
-}
-
-* {
-    font-family:'Courier New', Courier, monospace
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main_content {
@@ -45,7 +42,6 @@ body {
 .logobar {
     justify-content: space-between;
     align-items: center;
-    padding-right: 2em;
     display: flex;
     flex-direction: row;
 }
@@ -316,7 +312,7 @@ body {
     margin-left: -1em;
   }
 
-.thing2, .wrapper3 {
+.thing2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -334,11 +330,6 @@ div.q1 {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-}
-
-.wrapper2 {
-    display: flex;
-    flex-direction: column;
 }
 
 div.stick {
